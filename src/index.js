@@ -2,8 +2,9 @@
 // o suficiente para fazer
 
 const express = require('express');
+// uso da biblioteca express
 const bodyParser = require('body-parser');
-
+// uso da biblioteca body parser
 const app = express();
 
 app.use(bodyParser.json());
