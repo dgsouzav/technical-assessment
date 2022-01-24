@@ -6,7 +6,5 @@ describe('Teste do meu server', () => {
         const res = await request('http://localhost:3000').get('/')
         
         expect(res.statusCode).toEqual(200)
-        espect(res.body).toHaveProperty('UserSchema')
-    
     })
 })
