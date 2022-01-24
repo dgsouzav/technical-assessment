@@ -1,3 +1,6 @@
+// Feito apenas a parte 1 do teste, parte 2 não tive tempo/conhecimento
+// o suficiente para fazer
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
