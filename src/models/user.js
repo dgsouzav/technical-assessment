@@ -1,6 +1,7 @@
 const mongoose = require('../database');
-
+// importando mongoose
 const UserSchema = new mongoose.Schema({
+// definindo os campos que estao no banco na tabela de usuario
     nome: {
         type: 'string',
     },
@@ -22,5 +23,5 @@ const UserSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model('User', UserSchema);
-
+// definindo o model
 module.exports = User;

@@ -6,12 +6,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // uso da biblioteca body parser
 const app = express();
-
+// chamando função express
 app.use(bodyParser.json());
+// indicando que irá usar body parser com json para ele entender
+// quando enviar uma requisição em json
 app.use(bodyParser.urlencoded({ extended: false }));
-
+// entender o uso de parâmetros via url 
 require('./controllers/authController')(app);
-
+// referencia da pasta controllers, passando o app
 const bodies = []
 
 const INTERVAL = 6000000
@@ -52,3 +54,4 @@ app.post("/v1/users", (req, res) => {
 })
 
 app.listen(3000);
+// porta a ser usada
